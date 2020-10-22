@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp" >
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/reminder" />
+
+    <TextView
+        android:id="@+id/dates"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="66dp"
+        android:layout_marginTop="225dp"
+        android:layout_marginRight="-18dp"
+        android:layout_toLeftOf="@+id/times" />
+
+    <TextView
+        android:id="@id/times"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_alignParentRight="true" />
+
+    <Button
+        android:layout_width="395dp"
+        android:layout_height="33dp"
+        android:layout_below="@id/times"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="74dp"
+        android:text="@string/done" />
+</RelativeLayout>
